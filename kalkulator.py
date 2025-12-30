@@ -66,7 +66,7 @@ class Calculator(tk.Tk):
         self.display_var = tk.StringVar(value="0")
         display = tk.Entry(self, textvariable=self.display_var, font=("Helvetica", 20), bd=5, relief=tk.RIDGE, justify='right')
         display.grid(row=0, column=0, columnspan=4, sticky="nsew", pady=(0,10))
-        display.bind("<Key>", lambda e: "break")  # cegah editing langsung pada Entry
+        display.bind("<Key>", lambda e: "break") 
 
         # Tombol-tombol
         buttons = [
@@ -181,3 +181,4 @@ class Calculator(tk.Tk):
 if __name__ == "__main__":
     app = Calculator()
     app.mainloop()
+
